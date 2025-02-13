@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Product Grid Redo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-color: rgb(39, 59, 109);
+        color: white;
+        font-family: 'Limelight', serif;
+        text-align: center; 
+        padding: 5px;
+        margin: 5px;
+        font-size: 1rem;
+    }
+
+    .product-page-container {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        list-style: none;
+    }
+
+    .product-card {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    background-color: wheat;
+    color: black;
+    list-style: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.responsive-img {
+    width: 100%;
+    max-width: 100%; /* Prevents the image from growing beyond the container */
+    height: auto; /* Keeps the aspect ratio */
+    border-radius: 5px; /* If applicable */
+    display: block; /* Prevents inline images from adding extra space */
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.buy-button {
+    background-color: orange;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.buy-button:hover {
+    background-color: lightblue;
+    color: blue;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .product-page-container {
+        flex-direction: column;
+    }
+
+    .buy-button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+ul {
+    list-style: none; /* Removes bullets */
+    padding: 0;       /* Removes default padding */
+    margin: 0;        /* Removes default margin */
+}
+
+
+</style>
+</head>
+
+<body>
+    <h1>Welcome to Pangean Wear</h1>
+    <p>Check out the latest Pangean Wear products!</p>
+
+    <div class="product-page-container">
+        <div class="product-card">
+            <img src="./CD50CDD3-2316-4FDB-A35A-7418D6D41F87_1_105_c.jpeg" alt="Model showcasing a blue Pangean Wear shirt with a modern design" class="responsive-img">
+            <p class="product-title">Punjabi Dariee</p>
+            <p>Inspired by my grandma's dariee.</p>
+            <div class="price">$100</div>
+            <ul class="product-features">
+                <li>👕 100% Pima Cotton</li>
+                <li>🌱 100% Made from Sustainable Fabric</li>
+                <li>💪🏽 100% Durable</li>
+            </ul>
+            <button class="buy-button">Buy</button>
+        </div>
+        <div class="product-card">
+            <img src="./86697ABC-5C6B-4F8F-9346-618723398BF5_1_105_c.jpeg" alt="Model showcasing a red Pangean Wear button-up shirt with a modern design" class="responsive-img">
+            <p class="product-title">Phulkari</p>
+            <p>Inspired by my grandma's phulkari.</p>
+            <div class="price">$100</div>
+            <ul class="product-features">
+                <li>👕 100% Pima Cotton</li>
+                <li>🌱 100% Made from Sustainable Fabric</li>
+                <li>💪🏽 100% Durable</li>
+            </ul>
+            <button class="buy-button">Buy</button>
+        </div>
+        <div class="product-card">
+            <img src="./Pangean_Wear_Images/blueshirt.jpeg" alt="A modern blue Pangean Wear shirt with a unique design" class="responsive-img">
+            <p class="product-title">Cultural T-Shirt</p>
+            <p>Inspired by culture</p>
+            <div class="price">$100</div>
+            <ul class="product-features">
+                <li>👕 100% Pima Cotton</li>
+                <li>🌱 100% Made from Sustainable Fabric</li>
+                <li>💪🏽 100% Durable</li>
+            </ul>
+            <button class="buy-button">Buy</button>
+        </div>
+    </div>
+</body>
